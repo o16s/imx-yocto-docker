@@ -10,7 +10,7 @@ Docker container with Yocto toolchain for i.MX SoCs.
 4. Setup the toolchain e.g.: `DISTRO=fsl-imx-fb MACHINE=imx6ull9x9evk source imx-setup-release.sh -b build` or return to an existing build folder: `source setup-environment build`
 5. `bitbake core-image-minimal` - builds a minimal bootable image for MACHINE
 
-- Make a standalone SDK that can be distributed and installed on other hosts: `DISTRO=fsl-imx-fb MACHINE=imx6ull9x9evk bitbake core-image-minimal -c populate-sdk`
+- Make a standalone SDK that can be distributed and installed on other hosts: `DISTRO=fsl-imx-fb MACHINE=imx6ull9x9evk bitbake core-image-minimal -c populate_sdk`
 
 ## Bitbake
 
