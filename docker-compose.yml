@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  imx-linux-zeus:
+    build: ./container
+    volumes:
+      - "~/imx-linux-zeus-default:/home/imx-linux-zeus"
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t 
+    env_file: .env
