@@ -10,7 +10,7 @@ RUN apt-get update && \
 RUN apt-get -y install gawk wget git-core diffstat unzip texinfo gcc-multilib \
             build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
             xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev \
-            pylint3 xterm nano vim python3 curl wget locales sudo rsync
+            pylint3 xterm nano vim python3 curl wget locales sudo rsync tmux libncurses5-dev
 
 RUN useradd -ms /bin/bash imx-linux-zeus && usermod -aG sudo imx-linux-zeus
 RUN echo "ALL ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
